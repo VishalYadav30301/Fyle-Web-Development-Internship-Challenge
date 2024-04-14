@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+    background-color: #fff; /* Calculator background color */
+    padding: 30px;
+    border: 2px solid #D1E3E2; /* Provide borders */
+    border-radius: 8px;
+    width: 400px; /* Set width of the calculator */
+    height: 480px;
+    margin: 80px auto; /* Center calculator horizontally */
+    margin-top: 130px; /* Increase margin-top */
+}
+.input-group input{
+    width: 430px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    /* margin: left 100px; */
+    padding: 15px;
+}
+
+
+label {
+    display: block;
+    font-weight: none;
+    font-family: sans-serif;
+    
+    margin-left: -1%;
+    margin-block-end:1px;
+}
+
+input[type="number"],
+select {
+    height:35px;
+    width: 350px; /* Set input width to 100% */
+    max-width: 500px; /* Set maximum width of input */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 320px;
+    height:35px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 80px;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.input-group{
+    position:relative;
+
+}
+.error-icon {
+    position:absolute;
+    top:50%;
+    right: 5px;
+    transform: translateY(-50%);
+    display: none;
+
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float:top;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.circle-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:white;
+    border:grey;
+    color:grey;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline:black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+   
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: blue;
+    cursor: pointer;
+}
+
+.tooltip:hover .tooltip-box {
+    display: block;
+}
+
+.tooltip-box {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #1b1a1a97;
+    border-radius: 50px;
+    padding: 8px;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
+  .question-mark {
+    display:inline-flexbox;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: rgb(48, 44, 44);
+    text-align: center;
+    line-height: 25px;
+    margin-right:0px;
+    margin-left: 5px;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+ #ageGroup{
+    height: 40px;
+    width:340px;
+    border: 2px solid black;
+ }
+
+ .tax-result-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 2px solid #D1E3E2;
+    padding: 20px;
+    justify-content: center; 
+    border-radius: 0px;
+    align-items: center; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top of other elements */
+    width:480px;
+    height: 400px;
+}
+
+.tax-amount {
+    margin: 0;
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px; /* Adjust the font size as needed */
+    color: #bbb LACK; /* Text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+.close-button {
+    position: absolute;
+    width: 90px;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to vertically center */
+    right: 20px; /* Adjust to align with the right edge */
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+    margin-right: 180px;
+}
+
+.close-button:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+.uil{
+    font-size: 20px;
+    margin-left:10px;
+}
